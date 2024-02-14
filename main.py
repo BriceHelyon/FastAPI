@@ -6,12 +6,12 @@ import schemas
 from typing import List
 
 
-Base.metadata.create_all(engine)  # Crée la base de données
+Base.metadata.create_all(engine)  
 
-# Initialise l'application
+
 app = FastAPI()
 
-# Fonction d'aide pour obtenir la session de la base de données
+
 def get_session():
     session = SessionLocal()
     try:

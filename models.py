@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime
 from database import Base
 
-# Définit la classe Article à partir de Base
+
 class Article(Base):
     __tablename__ = 'articles'
     id = Column(Integer, primary_key=True)
